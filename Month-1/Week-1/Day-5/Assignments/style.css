@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* basic sans-serif font */
+}
+body {
+    margin: 40px;
+}
+.assignment-1 {
+    margin-bottom: 60px;
+}
+.assignment-1 .intro-text {
+    font-size: 24px;
+    line-height: 1.4;
+    color: black;
+}
+.assignment-1 .red-text {
+    color: red;
+}
+.assignment-1 .green-underline {
+    color: green;
+    text-decoration: underline;
+}
+.assignment-1 .body-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+table {
+    width: 450px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* alternating rows using nth-child pseudo-class */
+tbody tr:nth-child(odd) {
+    background-color: #262626;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+    color: #262626;
+}
+.assignment-2 {
+    margin-top: 40px;
+}
+.column {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+.column + .column {
+    margin-left: 8%;
+}
+h2 {
+    font-size: 20px;
+    color: #334e68;
+    margin-bottom: 10px;
+}
+.form-container {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 4px;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d9e2ec;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+.form-container input:focus {
+    border: 1px solid #334e68;
+}
+
+.form-container input::placeholder {
+    color: #bac7d5;
+}
+.do-form .form-group {
+    margin-bottom: 25px;
+}
+
+.do-form .form-group:last-child {
+    margin-bottom: 0;
+}
+
+.do-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #334e68;
+}
+.dont-form * {
+    display: block;
+}
+.dont-form label {
+    margin-bottom: 12px; /* label is too far from input */
+    color: #334e68;
+}
+.dont-form input {
+    margin-bottom: 12px; /* input has the same spacing */
+}
+.dont-form input:last-child {
+    margin-bottom: 0;
+}
